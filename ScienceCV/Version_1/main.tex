@@ -33,7 +33,7 @@
 \usepackage[scale=0.75]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
-
+\usepackage{amsmath}
 %----------------------------------------------------------------------------------------
 %   NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
@@ -49,7 +49,7 @@
 %\fax{(000) 111 1113}
 \email{vladimir.shadymov@gmail.com}
 %\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-%\extrainfo{additional information}
+\extrainfo{DOB: the 2$^{\text{\it nd}}$ of December, 1997}
 %\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
 
@@ -82,7 +82,8 @@
 %----------------------------------------------------------------------------------------
 %   WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-
+\section{Work experience}
+\cvitem{}{\textbf{Tutor}. Worked with gifted children as mathematics and physics teacher.}
 
 %----------------------------------------------------------------------------------------
 %   ACheivements SECTION
@@ -90,7 +91,10 @@
 
 \section{Achievements}
 
-\cvitem{2016}{\textbf{All-Russian Olympiad, Regional Stage}. Prize-winner in  Physics}
+\cvitem{2015, 2016}{\textbf{All-Russian Olympiad, Regional Stage}. Prize-winner in  Physics}
+\cvitem{2015, 2016}{\textbf{PhysTech Olympiad}. Prize-winner in  Physics and Mathematics}
+\cvitem{2015, 2016}{\textbf{All-Siberian Olympiad}. Prize-winner in  Physics}
+\cvitem{2015}{\textbf{All-Russian Olympiad, Regional Stage}. Prize-winner in  Chemistry}
 
 %----------------------------------------------------------------------------------------
 %   INTERESTS SECTION
@@ -102,34 +106,39 @@
 
 %\cvlistdoubleitem{Piano}{Chess}
 %\cvlistdoubleitem{Cooking}{Dancing}
+\cvlistitem{Applied Physics (conducting experiments, processing experimental results)}
 \cvlistitem{Algorithms and Data Structures}
-\cvlistitem{Applied Physics}
 
 %----------------------------------------------------------------------------------------
 %   TECHNICAL SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Technical skills}
 
-\cvitem{OS}{Linux, Unix,Windows}
-\cvitem{Languages}{C++(STL), C, Python}
+\section{Scientific skills}
 
+\cvitem{Laboratory skills}{Basic physical methods. Basic routine chemical methods (solutions preparing, titration, pH measurement), photometric method of analysis}
+\section{Computer skills}
+\cvitem{Python}{Scripting, data analysis (least-squares fitting, spline interpolation, numerical differentiation and integration) and visualisation. Worked with such packages as NumPy, SciPy, Matplotlib, Pandas, Bokeh. Familiar with Nosetests for Python. }
+ 
+\cvitem{C++}{Worked with STL, Google Test framework. Familiar with .NET Framework. Developed programm (1k strings) for calculus in quaternions. For more details, see the repository:  \href{https://github.com/vladimirshadymov/quaternions}{\textcolor{blue}{https://github.com/vladimirshadymov/quaternions}.}}
+
+\cvitem{Other}{Linux/Windows fluent user, extensive experience with Microsoft Office-like software. Worked with Git. Familiar with \LaTeX. }
 
 %----------------------------------------------------------------------------------------
 %   LANGUAGES SECTION
 %----------------------------------------------------------------------------------------
-
 \section{Languages}
 
 
 \cvitemwithcomment{Russian}{Native Speaker}{}
 \cvitemwithcomment{English}{Intermediate}{}
+\cvitemwithcomment{German}{Elementary}{}
 
-\section{Hobbies}
-
+\section{Hobbies \& Extra-curricular activities}
 %\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
-\cvlistitem{Sports (swimming, volleyball, cycling)}
-
+\cvitem{Sports}{Swimming, volleyball, cycling}
+\cvitem{Team work}{Organized with co-students a point for holding the PhysTech olympiad in February 2017}
+\cvitem{Leadership}{Lead a group of campers in a week-long ski trip for 100km under the Arctic Circle in The Republic of Karelia, as a semi-final stage of competition "Reach the North Pole". (February 2016)}
 
 %----------------------------------------------------------------------------------------
 %   COVER LETTER
@@ -153,4 +162,4 @@
 
 %----------------------------------------------------------------------------------------
 
-\end{document}
+\end{document}\grid
