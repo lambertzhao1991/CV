@@ -1,0 +1,97 @@
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+\documentclass[10pt,a4paper,normalphoto]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% Change the colours if you want to
+\definecolor{Yellow}{HTML}{fbb503}
+\definecolor{DarkBlue}{HTML}{0f2747}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Yellow}
+\colorlet{accent}{Yellow}
+\colorlet{emphasis}{DarkBlue}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Thomas Bedouret}
+\tagline{First Year Student at Centrale Nantes Engineering School looking for a 4 weeks internship in July or August 2018, with [/aerospace/transport/green energies...] companies}
+
+\photo{3.7cm}{Logo}
+
+\personalinfo{
+  \email{thomas.bedouret@eleves.ec-nantes.fr}
+  \phone{+33(0)7 50 53 09 22}
+  \mailaddress{32 route de la Jonelière B103C, 44300 Nantes}
+  \location{Nantes FR}
+  \linkedin{linkedin.com/in/tbedouret}
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\cvsection[page1sidebar]{Education \& Qualifications}
+\cvevent{Engineering Student}{Centrale Nantes Engineering School}{September 2017 -- Ongoing}{Nantes, FR}
+
+\divider
+
+\cvevent{Classe préparatoire MPSI \& PSI, Maths, Physics, Engineering \& Maths}{Gustave Eiffel and Camille Juillan High Schools}{September 2015 -- July 2017}{Bordeaux, FR}
+\begin{itemize}
+\item 2 years intensive program preparing for engineering schools.
+\end{itemize}
+
+\divider
+
+\cvevent{Baccalauréat S}{Camille Juillan High School}{2015}{Bordeaux, FR}
+\begin{itemize}
+\item Equivalent to High School Diploma with advanced courses in mathematics and physics.
+\item With highest honour (17.10/20), Computer Science specialisation, and Sciences in English option.
+\end{itemize}
+
+\cvsection{Work Experience}
+%\cvevent{Centrale Nantes Junior Entreprise}{Centrale Nantes Etudes}{2017}{Nantes, FR}
+%\begin{itemize}
+%\item Project Manager in the Young Management Consulting Firm of Ecole Centrale de Nantes
+%\item Part of the top 30 Junior-Entreprises in France
+%\end{itemize}
+
+%\divider
+
+\cvevent{Industrial Study Project}{Armor \& Centrale Nantes}{2018}{Nantes, FR}
+\begin{itemize}
+\item Studied and proposed solution to enhance pump carts in an enduction chain
+\item Part of a 6 student team to accomplish this 6 month task
+\end{itemize}
+
+\divider
+
+\cvevent{TIPE Project}{Preparation Class final project}{2017}{Bordeaux, FR}
+\begin{itemize}
+\item On the efficiency of drone propellers
+\item Used Solidworks Flow Simulation to verify results of 3D-printed propellers
+\item Highest grade
+\end{itemize}
+
+\divider
+
+\cvevent{Private Physics \& Math Tutor}{High School Level}{2017}{Bordeaux, FR}
+\begin{itemize}
+\item Catch-up classes for a group of 6 high-school students
+\end{itemize}
+\clearpage
+\end{document}
